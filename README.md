@@ -15,9 +15,9 @@ Não instalar o react-native-cli de forma global. Caso tenha instalado, remover:
 
 
 
-## ********************************************************
-## README.md projetos anteriores
-## ********************************************************
+### ********************************************************
+### README.md projetos anteriores
+### ********************************************************
 
 # 
 # GoBarber Web
