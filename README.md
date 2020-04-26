@@ -10,15 +10,84 @@ Não instalar o react-native-cli de forma global. Caso tenha instalado, remover:
 
 * $ npx react-native init appgobarber --template react-native-template-typescript
 
+### Executar projeto
+* Windows/Android abrir emulador antes de executar
+    * $ yarn android
+* Mac executar diretamente
+    * $ yarn ios
 
+### Ajustes no projeto inicial
+* Criar novo App.tsx limpo em src e mudar App e index.js
+* Remover arquivos de configuração
+    * .eslintrc.js
+    * .prettierrc.js
 
+### Configurar padrões
 
-### 
-### 
-### 
+* $ yarn add eslint -D
+* $ yarn eslint --init
+
+```
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Does your project use TypeScript? Yes
+? Where does your code run?
+? How would you like to define a style for your project? Use a popular style guide
+? Which style guide do you want to follow? Airbnb: https://github.com/airbnb/javascript
+? What format do you want your config file to be in? JSON
+Checking peerDependencies of eslint-config-airbnb@latest
+The config that you've selected requires the following dependencies:
+
+eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@^5.16.0 || ^6.8.0 eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 || ^1.7.0 @typescript-eslint/parser@latest
+? Would you like to install them now with npm? No
+```
+
+* $ yarn add - D eslint-plugin-react@^7.19.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint-plugin-import@^2.20.1 eslint-plugin-jsx-a11y@^6.2.3 eslint-plugin-react-hooks@^2.5.0 @typescript-eslint/parser@latest
+
+* $ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+
+* $ yarn add -D eslint-import-resolver-typescript
+
+* Copiar os arquivos de configuração do projeto WEB para o projeto Mobile:
+    * .editorconfig
+    * .eslintignore
+    * .eslintrc.json
+      * Retirar a linha browser em Env
+        * ```
+          "env": {
+            "browser": true,
+            "es6": true
+          },
+          ```
+    * prettier.config.js
+
+* Recarregar VSCode (Ctrl + Shift + P >> Reload Window)
+
+### Para IOS necessário rodar comandos para o React-Navigation
+
+```
+$ cd ios
+$ pod install
+  * cocoapods (cocoapods.org) precisa estar instalado
+    * $ sudo gem install cocoapods
+```
+
+### Instalar Fonts
+
+* Baixar fontes
+* Salvar na raiz do projeto em /assets/fonts o TTFs desejados
+  * ficar atento ao nome do arquivo para Android e IOS
+  * Não é a mesma pasta assets do SRC
+* Criar e configurar o react-native.config.js no raiz
+* $ yarn react-native link
+
+### .
+### .
+### .
 
 ### *****************************************************************
-### README.md projetos anteriores  
+### >>>>>>> README.md projetos anteriores
 
 # GoBarber Web
 
