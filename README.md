@@ -106,7 +106,7 @@ $ pod install
     ];
 
     apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
-  ```
+    ```
 
 
 
