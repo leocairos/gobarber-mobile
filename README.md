@@ -89,7 +89,7 @@ $ pod install
 * $ /ios/appgobarber/info.plist
   * incluir "<string>Feather.ttf</string>":
   * ```
-    "<key>UIAppFonts</key>
+    <key>UIAppFonts</key>
       <array>
         <string>RobotoSlab-Medium.ttf</string>
         <string>RobotoSlab-Regular.ttf</string>
