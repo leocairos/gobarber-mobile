@@ -82,6 +82,34 @@ $ pod install
 * Criar e configurar o react-native.config.js no raiz
 * $ yarn react-native link
 
+### Instalar icons (apenas IOS, no android é automatico)
+
+* $ cd ios
+* $ pod install
+* $ /ios/appgobarber/info.plist
+  * incluir "<string>Feather.ttf</string>":
+  * ```
+    "<key>UIAppFonts</key>
+      <array>
+        <string>RobotoSlab-Medium.ttf</string>
+        <string>RobotoSlab-Regular.ttf</string>
+        <string>Feather.ttf</string>
+      </array>
+    ```
+
+### Ajustar /android/app/build.gradele
+
+* incluir na ultima linha
+  * ```
+    project.ext.vectoricons = [
+      iconsFontNames: ['Feather.ttf']
+    ];
+
+    apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+  ```
+
+
+
 ### .
 ### .
 ### .
