@@ -432,3 +432,23 @@ build
 
 * //eslint-disable-line
   desabilita a checagem do eslint na linha
+
+### Extensions VSCode
+
+* dzannotti.vscode-babel-coloring
+* naumovs.color-highlight
+* ricardo-emerson.create-react-tsx-component
+* mikestead.dotenv
+* dracula-theme.theme-dracula
+* editorconfig.editorconfig
+* dsznajder.es7-react-js-snippets
+* dbaeumer.vscode-eslint
+* wix.glean
+* pkief.material-icon-theme
+* ricardo-emerson.react-development-extensions-pack
+* msjsdiag.vscode-react-native
+* equimper.react-native-react-redux
+* rocketseat.rocketseatreactnative
+* rocketseat.rocketseatreactjs
+* jpoissonnier.vscode-styled-components
+* hookyqr.beautify
