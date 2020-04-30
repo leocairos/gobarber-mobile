@@ -113,11 +113,16 @@ $ pod install
 ```
 * iOS com Emulador: localhost
 * iOs com fisico: IP da maquina
-* Android com Emulador: localhost (adb reverse tcp:3333 tcp:3333)
+* Android com Emulador: localhost ($ adb reverse tcp:3333 tcp:3333)
 * Android com Emulador: 10.0.2.2 (Android Studio)
 * Android com Emulador: 10.0.3.2 (Genymotion)
 * Android com fisico: IP da maquina
 ```
+
+### Add AsyncStorage (in IOS)
+
+* $ cd ios
+* $ pod install
 
 ### .
 ### .
