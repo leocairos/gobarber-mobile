@@ -108,7 +108,16 @@ $ pod install
     apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
     ```
 
+### Configurar endereço do backend (baseURL: 'http://?:3333')
 
+```
+* iOS com Emulador: localhost
+* iOs com fisico: IP da maquina
+* Android com Emulador: localhost (adb reverse tcp:3333 tcp:3333)
+* Android com Emulador: 10.0.2.2 (Android Studio)
+* Android com Emulador: 10.0.3.2 (Genymotion)
+* Android com fisico: IP da maquina
+```
 
 ### .
 ### .
