@@ -516,5 +516,8 @@ build
     },
     "git.enableSmartCommit": true,
     "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+
+    "editor.semanticHighlighting.enabled": false,
 }
 ```
