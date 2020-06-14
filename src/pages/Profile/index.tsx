@@ -138,6 +138,7 @@ const Profile: React.FC = () => {
 
         if (response.error) {
           Alert.alert(`Erro ao atualizar avatar.${response.error}`);
+          console.log(response.error);
           return;
         }
 
