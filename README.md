@@ -530,3 +530,10 @@ build
   * Dicas de uso em Finalizando front-end mobile do app >> Agendamento
   * view settings >> components >> Hide Components wher.. (add: type equals context)
   * Nome const do style (./styles.ts). Ex.: Header.displayName = 'DashboardHeader';
+
+
+## Test
+
+* $ yarn test
+* $ yarn test --watchAll true
+* $ yarn test --coverage
